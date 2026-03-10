@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashish Dhakane - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- =============================================
+       NAVBAR
+       - Fixed at top, always visible on scroll
+       - Has dark mode toggle (#themeToggle)
+       - Hamburger for mobile (toggles .open on nav-menu)
+       - To rename nav links: edit the <a> text below
+  ============================================= -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-text">Ashish Dhakane</span>
+      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home"           class="nav-link">Home</a></li>
+        <li><a href="#about"          class="nav-link">About</a></li>
+        <li><a href="#skills"         class="nav-link">Skills</a></li>
+        <li><a href="#projects"       class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact"        class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+        <div class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- =============================================
+       HERO SECTION
+       - Full viewport height
+       - Avatar initials (swap div for <img> when you have a photo)
+       - Typing animation: edit words[] in script.js
+       - Two buttons: scroll to projects + download resume
+  ============================================= -->
+  <section id="home" class="hero">
+    <div class="hero-blob blob-1"></div>
+    <div class="hero-blob blob-2"></div>
+
+    <div class="hero-content">
+      <!-- Profile avatar: replace with <img src="photo.jpg" class="avatar-img"> when ready -->
+<img src="photo.jpg" class="avatar-img">
+
+      <h1 class="hero-title">Hi, I'm <span class="highlight">Ashish Dhakane</span></h1>
+
+      <!-- Typing text: words cycle inside #typed-text -->
+      <p class="hero-subtitle">
+        I build <span id="typed-text" class="typed"></span><span class="cursor">|</span>
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="cta-button">Explore My Work</a>
+        <!-- Update PDF filename if it changes -->
+        <a href="Ashish Dhakane resume.pdf" class="cta-button resume-btn" download>
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       ABOUT SECTION
+       - Education + Interests cards
+       - 10th/12th grades REMOVED (irrelevant on a dev portfolio)
+       - CGPA kept (decent and current)
+       - To add more education rows: copy an .edu-item div
+  ============================================= -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+
+        <!-- Education Card -->
+        <div class="detail-card fade-in">
+          <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h3>Education</h3>
+          <div class="education-list">
+            <div class="edu-item">
+              <div class="edu-title">School</div>
+              <div class="edu-value">Blossom Public School</div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-title">Junior College</div>
+              <div class="edu-value">Sant Tukaram JR College</div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-title">Undergraduate (Current)</div>
+              <div class="edu-value">B.Tech — Pimpri Chinchwad University</div>
+              <!-- Update CGPA number when it changes -->
+              <div class="cgpa-badge">CGPA: 7.8</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interests Card -->
+        <div class="detail-card fade-in">
+          <div class="card-icon"><i class="fas fa-lightbulb"></i></div>
+          <h3>Interests</h3>
+          <div class="interests-list">
+            <!-- To add more interests: copy a <p> line -->
+            <p><i class="fas fa-robot"></i> AI Development</p>
+            <p><i class="fas fa-palette"></i> Web Design</p>
+            <p><i class="fas fa-microchip"></i> IoT Projects</p>
+            <p><i class="fas fa-puzzle-piece"></i> Problem Solving</p>
+            <p><i class="fas fa-shield-alt"></i> Cybersecurity</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       SKILLS SECTION
+       - Grouped into categories with hoverable tags
+       - To add a skill: copy a <span class="skill-tag">
+       - To add a new group: copy an entire .skill-group block
+  ============================================= -->
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-container">
+
+        <div class="skill-group">
+          <h4 class="skill-group-title"><i class="fas fa-laptop-code"></i> Frontend</h4>
+          <div class="skills-tags">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4 class="skill-group-title"><i class="fas fa-code"></i> Languages</h4>
+          <div class="skills-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Java</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4 class="skill-group-title"><i class="fas fa-brain"></i> Domains</h4>
+          <div class="skills-tags">
+            <span class="skill-tag">IoT</span>
+            <span class="skill-tag">Cybersecurity</span>
+            <span class="skill-tag">AI / ML</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4 class="skill-group-title"><i class="fas fa-tools"></i> Tools</h4>
+          <div class="skills-tags">
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Vercel</span>
+            <span class="skill-tag">VS Code</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       PROJECTS SECTION
+       - Cards with: icon | title | desc | tech tags | buttons
+       - "Coming Soon" for projects without live links
+       - To add a project: copy a .project-card block
+       - To add a live link: fill in the href on the Live button
+       - To add GitHub: uncomment the github-btn <a> tag
+  ============================================= -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+
+        <!-- StockStage -->
+        <div class="project-card fade-in">
+          <div class="project-header"><i class="fas fa-chart-line"></i></div>
+          <div class="project-body">
+            <h3>StockStage</h3>
+            <p>AI-powered stock market analyzer offering real-time predictions and trend analysis.</p>
+            <div class="project-tags"><span>AI</span><span>Finance</span><span>Web App</span></div>
+          </div>
+          <div class="project-links">
+            <a href="https://fusion-finance-dashboard.vercel.app/login" target="_blank" class="proj-btn live-btn">
+              <i class="fas fa-external-link-alt"></i> Live
+            </a>
+            <!-- <a href="YOUR_GITHUB_URL" target="_blank" class="proj-btn github-btn"><i class="fab fa-github"></i> GitHub</a> -->
+          </div>
+        </div>
+
+        <!-- AI Interview Model -->
+        <div class="project-card fade-in">
+          <div class="project-header"><i class="fas fa-user-tie"></i></div>
+          <div class="project-body">
+            <h3>AI Interview Model</h3>
+            <p>Mock interview system using AI to provide real-time feedback and performance evaluation.</p>
+            <div class="project-tags"><span>AI</span><span>NLP</span><span>Web App</span></div>
+          </div>
+          <div class="project-links">
+            <a href="https://v0-ai-interview-module.vercel.app/" target="_blank" class="proj-btn live-btn">
+              <i class="fas fa-external-link-alt"></i> Live
+            </a>
+          </div>
+        </div>
+
+        <!-- LinguAAIZE -->
+        <div class="project-card fade-in">
+          <div class="project-header"><i class="fas fa-language"></i></div>
+          <div class="project-body">
+            <h3>LinguAAIZE</h3>
+            <p>AI-driven platform for interactive, personalized language learning experiences.</p>
+            <div class="project-tags"><span>AI</span><span>EdTech</span><span>NLP</span></div>
+          </div>
+          <div class="project-links">
+            <!-- Add link when ready -->
+            <span class="proj-btn coming-btn">Coming Soon</span>
+          </div>
+        </div>
+
+        <!-- Smart ERP System -->
+        <div class="project-card fade-in">
+          <div class="project-header"><i class="fas fa-cogs"></i></div>
+          <div class="project-body">
+            <h3>Smart ERP System</h3>
+            <p>Web-based ERP solution for managing enterprise workflows and operations efficiently.</p>
+            <div class="project-tags"><span>Web App</span><span>Enterprise</span><span>Dashboard</span></div>
+          </div>
+          <div class="project-links">
+            <span class="proj-btn coming-btn">Coming Soon</span>
+          </div>
+        </div>
+
+        <!-- Smart Air Monitoring -->
+        <div class="project-card fade-in">
+          <div class="project-header"><i class="fas fa-wind"></i></div>
+          <div class="project-body">
+            <h3>Smart Air Monitoring System</h3>
+            <p>IoT-based air quality tracker sending live sensor data to the web via Python and USB.</p>
+            <div class="project-tags"><span>IoT</span><span>Python</span><span>Sensors</span></div>
+          </div>
+          <div class="project-links">
+            <span class="proj-btn coming-btn">Coming Soon</span>
+          </div>
+        </div>
+
+        <!-- EasyRoof -->
+        <div class="project-card fade-in">
+          <div class="project-header"><i class="fas fa-home"></i></div>
+          <div class="project-body">
+            <h3>EasyRoof.com</h3>
+            <p>Real estate platform for simplified property search and management.</p>
+            <div class="project-tags"><span>Web App</span><span>Real Estate</span></div>
+          </div>
+          <div class="project-links">
+            <span class="proj-btn coming-btn">Coming Soon</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       CERTIFICATIONS SECTION
+       - Click the trigger card to open popup
+       - Popup shows all cert images in a scrollable grid
+       - Click any image to zoom fullscreen
+       - To add more certs: add <img src="certX.jpg" alt="..."> inside .cert-images
+  ============================================= -->
+  <section id="certifications" class="certifications">
+    <div class="container">
+      <h2 class="section-title">Certifications</h2>
+
+      <!-- Clickable card — opens popup -->
+      <div class="cert-trigger" id="cert-card">
+        <i class="fas fa-certificate"></i>
+        <h3>View My Certificates</h3>
+        <p>Click to browse all certifications</p>
+      </div>
+
+      <!-- Popup: hidden by default, JS shows it on click -->
+      <div class="cert-popup" id="cert-popup">
+        <div class="cert-content">
+          <span class="close-btn" id="close-popup">&times;</span>
+          <h3>My Certifications</h3>
+          <!-- Add/remove <img> tags here for each certificate -->
+          <div class="cert-images">
+            <img src="cert1.jpg"  alt="Certificate 1"  />
+            <img src="cert2.jpg"  alt="Certificate 2"  />
+            <img src="cert3.jpg"  alt="Certificate 3"  />
+            <img src="cert4.jpg"  alt="Certificate 4"  />
+            <img src="cert6.jpg"  alt="Certificate 6"  />
+            <img src="cert7.jpg"  alt="Certificate 7"  />
+            <img src="cert8.jpg"  alt="Certificate 8"  />
+            <img src="cert9.jpg"  alt="Certificate 9"  />
+            <img src="cert10.jpg" alt="Certificate 10" />
+            <img src="cert11.jpg" alt="Certificate 11" />
+            <img src="cert12.jpg" alt="Certificate 12" />
+            <img src="cert13.jpg" alt="Certificate 13" />
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       CONTACT SECTION
+       - Four contact methods: Email, Phone, GitHub, LinkedIn
+       - To update details: change href and display text in each .contact-item
+  ============================================= -->
+ <!-- =============================================
+     CONTACT SECTION
+     - Professional contact form (Name, Email, Phone, Topic, Message)
+     - EmailJS sends you an email on every submission
+     - Google Apps Script saves data to Google Sheets
+     - To update your email: change the EmailJS template settings
+     - Topic options: add/remove <option> tags inside the select
+============================================= -->
+<section id="contact" class="contact">
+  <div class="container">
+    <h2 class="section-title">Get In Touch</h2>
+
+    <!-- Contact layout: info cards on left, form on right -->
+    <div class="contact-wrapper">
+
+      <!-- ── Left: Contact Info Cards ── -->
+      <div class="contact-info">
+
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:dhakneashish110@gmail.com">dhakneashish110@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <div>
+            <h4>Phone</h4>
+            <a href="tel:+918830533848">+91 88305 33848</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <i class="fab fa-github"></i>
+          <div>
+            <h4>GitHub</h4>
+            <a href="https://github.com/ashish-dhakane" target="_blank">ashish-dhakane</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <i class="fab fa-linkedin"></i>
+          <div>
+            <h4>LinkedIn</h4>
+            <a href="https://www.linkedin.com/in/ashish-dhakane-971935289/" target="_blank">Ashish Dhakane</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ── Right: Contact Form ── -->
+      <div class="contact-form-wrapper">
+        <h3 class="form-heading">Send Me a Message</h3>
+        <p class="form-subtext">Fill in the form and I'll get back to you shortly.</p>
+
+        <form id="contactForm" class="contact-form" novalidate>
+
+          <!-- Row 1: Name + Email -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-name">Full Name <span class="required">*</span></label>
+              <input type="text" id="cf-name" name="from_name" placeholder="Ashish Dhakane" required />
+              <span class="field-error" id="err-name">Please enter your name</span>
+            </div>
+            <div class="form-group">
+              <label for="cf-email">Email Address <span class="required">*</span></label>
+              <input type="email" id="cf-email" name="from_email" placeholder="you@example.com" required />
+              <span class="field-error" id="err-email">Please enter a valid email</span>
+            </div>
+          </div>
+
+          <!-- Row 2: Phone + Topic -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-phone">Phone Number</label>
+              <input type="tel" id="cf-phone" name="phone" placeholder="+91 98765 43210" />
+            </div>
+            <div class="form-group">
+              <label for="cf-topic">Topic of Connection <span class="required">*</span></label>
+              <!-- To add/remove topics: edit the <option> tags below -->
+              <select id="cf-topic" name="topic" required>
+                <option value="" disabled selected>Select a topic</option>
+                <option value="Job Opportunity">💼 Job Opportunity</option>
+                <option value="Collaboration / Project">🤝 Collaboration / Project</option>
+                <option value="Freelance Work">💻 Freelance Work</option>
+                <option value="General Inquiry">💬 General Inquiry</option>
+              </select>
+              <span class="field-error" id="err-topic">Please select a topic</span>
+            </div>
+          </div>
+
+          <!-- Message -->
+          <div class="form-group full-width">
+            <label for="cf-message">Message <span class="required">*</span></label>
+            <textarea id="cf-message" name="message" rows="5"
+              placeholder="Hi Ashish, I'd like to connect regarding..." required></textarea>
+            <span class="field-error" id="err-message">Please enter a message</span>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="submit-btn" id="submitBtn">
+            <span id="btn-text"><i class="fas fa-paper-plane"></i> Send Message</span>
+            <span id="btn-loading" style="display:none;"><i class="fas fa-spinner fa-spin"></i> Sending...</span>
+          </button>
+
+          <!-- Success / Error feedback messages -->
+          <div class="form-feedback success" id="form-success">
+            <i class="fas fa-check-circle"></i> Message sent successfully! I'll get back to you soon.
+          </div>
+          <div class="form-feedback error" id="form-error">
+            <i class="fas fa-exclamation-circle"></i> Something went wrong. Please try again or email me directly.
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Scroll To Top button: JS adds .show class after 300px scroll -->
+  <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
