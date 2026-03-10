@@ -1,52 +1,82 @@
-# 🌐 Ashish Dhakane - Portfolio Website
+# Ashish Dhakane — Personal Portfolio
 
-Welcome to my personal portfolio website!  
-This website showcases my **education**, **projects**, **skills**, **certifications**, and **contact information** — all in one modern, responsive, and interactive webpage.
+A clean, modern, and responsive personal portfolio website built with **HTML, CSS, and JavaScript**. Deployed on Vercel.
 
----
-
-## 🚀 Live Demo
-🔗 **[Visit My Portfolio]https://ashish-portfolio-eta.vercel.app/**  
-*(Replace this link with your actual deployed site URL from Vercel)*
+🔗 **Live Site:** [ashish-portfolio-eta.vercel.app](https://ashish-portfolio-eta.vercel.app)
 
 ---
 
-## 🧰 Tech Stack
-- **HTML5** – for structure  
-- **CSS3** – for styling and animations  
-- **JavaScript (Vanilla JS)** – for interactivity  
-- **Vercel** – for hosting and deployment  
-- **Git & GitHub** – for version control
+## 🚀 Features
+
+- Responsive design (mobile, tablet, desktop)
+- Dark / Light mode toggle
+- Typing animation in hero section
+- Skills grouped by category
+- Project cards with live links and tech tags
+- Certifications popup with image zoom
+- Contact form with EmailJS (email notifications) and Google Sheets (auto data logging)
+- Smooth scroll and scroll-to-top button
 
 ---
 
-## 📁 Folder Structure
-ashish-portfolio/
-│
+## 🛠️ Tech Stack
+
+| Tech | Usage |
+|------|-------|
+| HTML5 | Structure |
+| CSS3 | Styling, animations, dark mode |
+| JavaScript (Vanilla) | Interactivity, form handling |
+| EmailJS | Contact form email notifications |
+| Google Apps Script | Auto-save form data to Google Sheets |
+| Vercel | Deployment |
+
+---
+
+## 📁 Project Structure
+
+```
+ashish-portfolio-main/
 └── public/
-├── index.html # Main webpage
-├── style.css # CSS styling file
-├── script.js # JavaScript logic
-├── vercel.json # Deployment config for Vercel
-└── images/ # All certificates and image files
-├── cert1.jpg
-├── cert2.jpg
-├── ...
-└── IOT PCU.png
-
-yaml
-Copy code
+    ├── index.html              # Main HTML file
+    ├── style.css               # All styles
+    ├── script.js               # All JavaScript
+    ├── Ashish Dhakane resume.pdf
+    ├── cert1.jpg – cert13.jpg  # Certificate images
+    └── vercel.json             # Vercel config
+```
 
 ---
 
-## ✨ Features
-- 🧭 **Fixed Navigation Bar** — Always visible while scrolling  
-- 🎓 **Education Section** — Shows schooling, higher secondary, and B.Tech details  
-- 💼 **Projects Section** — Highlights my completed works  
-- 🧠 **Interests & Certifications Section** — Displays certificates in a scrollable view  
-- 📱 **Fully Responsive Design** — Works smoothly on all screen sizes  
-- ⚙️ **Simple Deployment** — Easily hosted using Vercel  
+## ⚙️ Setup & Deployment
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/ashish-dhakane/ashish-portfolio.git
+cd ashish-portfolio
+```
+
+### 2. Configure the contact form
+Open `public/script.js` and fill in your credentials:
+```js
+const EMAILJS_PUBLIC_KEY  = "your_key";
+const EMAILJS_SERVICE_ID  = "your_service_id";
+const EMAILJS_TEMPLATE_ID = "your_template_id";
+const GOOGLE_SCRIPT_URL   = "your_apps_script_url";
+```
+> See `SETUP-GUIDE.txt` for full step-by-step instructions.
+
+### 3. Deploy on Vercel
+Push to GitHub and connect the repo on [vercel.com](https://vercel.com). Vercel auto-deploys on every push.
 
 ---
 
- 
+## 📬 Contact
+
+**Ashish Dhakane**
+- Email: [dhakneashish110@gmail.com](mailto:dhakneashish110@gmail.com)
+- GitHub: [@ashish-dhakane](https://github.com/ashish-dhakane)
+- LinkedIn: [Ashish Dhakane](https://www.linkedin.com/in/ashish-dhakane-971935289/)
+
+---
+
+> Built with 💚 by Ashish Dhakane
