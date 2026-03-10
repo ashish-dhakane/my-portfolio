@@ -2,7 +2,7 @@
 
 A clean, modern, and responsive personal portfolio website built with **HTML, CSS, and JavaScript**. Deployed on Vercel.
 
-🔗 **Live Site:** [ashish-portfolio-eta.vercel.app](https://ashish-portfolio-eta.vercel.app)
+🔗 **Live Site:** [ashish-portfolio-eta.vercel.app]()
 
 ---
 
